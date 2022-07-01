@@ -14,13 +14,13 @@ int main(void)
 	n = rand() - RAND_MAX / 2;
 	if (n > 5)
 	{
-		printf("%s and is greater than 5\n", n);
+		printf("%d and is greater than 5\n", n);
 	} else if (n == 0)
 	{
-		printf("%s and is 0\n", n);
-	} else (n < 6, n != 0)
+		printf("%d and is 0\n", n);
+	} else (n < 6; n != 0)
 	{
-		printf("%s and is less than 6 and not 0\n", n);
+		printf("%d and is less than 6 and not 0\n", n);
 	}
 	return (0);
 }
