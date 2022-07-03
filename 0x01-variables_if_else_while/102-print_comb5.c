@@ -5,27 +5,23 @@
  */
 int main(void)
 {
-	int digit1, digit2, digit3;
+	int num1, num2;
 
-	for (digit1 = 48; digit1 < 58; digit1++)
+	for (num1 = 0; num1 <= 98; num1++)
 	{
-		for (digit2 = 49; digit2 < 58; digit2++)
+		for (num2 = num1 + 1; num2 <= 99; num2++)
 		{
-			for (digit3 = 50; digit3 < 58; digit3++)
-			{
-				if (digit3 > digit2 && digit2 > digit1)
-				{
-					putchar(digit1);
-					putchar(digit2);
-					putchar(digit3);	
-					if (digit1 != 55 || digit2 != 56)
-				{
+			putchar((num1 / 10) + '0');
+			putchar((num1 % 10) + '0');
+			putchar(' ');
+			putchar((num2 / 10) + '0');
+			putchar((num2 % 10) + '0');
+
+			if (num1 == 98 && num2 == 99)
+				continue;
 			putchar(',');
 			putchar(' ');
-				}
-				}
-			}
-		}			
+		}
 	}
 	 putchar('\n');
 
