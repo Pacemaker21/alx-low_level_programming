@@ -13,15 +13,16 @@ int main(void)
 		{
 			for (digit3 = 50; digit3 < 58; digit3++)
 			{
-				putchar((digit1 % 10) + '0');
-				putchar((digit2 % 10) + '0');
-				putchar((digit3 % 10) + '0');
-
-				if (digit1 != 55 || digit2 != 56)
-				continue;
-
+				if (digit3 > digit2 && digit2 > digit1)
+				{
+					putchar(digit1);
+					putchar(digit2);
+					putchar(digit3);	
+					if (digit1 != 55 || digit2 != 56)
+				{
 			putchar(',');
 			putchar(' ');
+				}
 			}
 		}
 	}
