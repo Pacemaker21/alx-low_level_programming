@@ -1,0 +1,10 @@
+#include "main.h"
+/**
+ * _isupper -> this is a function to check upper case alphabets
+ * @c: an integer parameter
+ * Return: Something but Success
+ */
+int _isupper(int c)
+{
+	if (c >= 'A' && c <= 'Z')
+}
