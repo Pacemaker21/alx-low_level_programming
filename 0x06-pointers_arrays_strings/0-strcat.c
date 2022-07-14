@@ -1,6 +1,7 @@
 #include "main.h"
 /**
- * _stract -> this is a function stract
+ * strcat - Concatenates the string pointed to by @src, including the
+ * terminating null byte, to the end of the string pointed to by @dest.
  * @dest: first parameter
  * @src: second parameter
  * Return: a character
@@ -18,6 +19,5 @@ char *_strcat(char *dest, char *src)
 		len += 1;
 	}
 	dest[len] = '\0';
-	return(dest);
+	return (dest);
 }
-
