@@ -1,19 +1,14 @@
 #include "main.h"
+#include <string.h>
 /**
- * _strcmp - Compares pointers to two strings.
- * @s1: A pointer to the first string to be compared.
- * @s2: A pointer to the second string to be compared.
- * Return: If str1 < str2, the negative difference of the
- * first unmatched characters.
- * If str1 == str2, 0.
- * If str1 > str2, the positive difference of the first unmatched characters.
+ * _strncpy -> for copying purpose
+ * @dest: param1
+ * @src: param2
+ * @n: param3
+ * Return: string
  */
-int _strcmp(char *s1, char *s2)
+char *_strncpy(char *dest, char *src, int n)
 {
-	while (*s1 && *s2 && *s1 == *s2)
-	{
-		s1++;
-		s2++;
-	}
-	return (*s1 - *s2);
+	strncpy(dest, src, n);
+	return (dest);
 }
